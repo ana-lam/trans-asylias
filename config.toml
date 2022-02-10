@@ -1,4 +1,4 @@
-baseURL       = "https://transasylias.github.io"
+baseURL       = "https://github.com/ana-lam/trans-asylias"
 languageCode  = "en-us"
 title         = "Trans Asylias"
 theme         = "roxo-hugo_remix"
