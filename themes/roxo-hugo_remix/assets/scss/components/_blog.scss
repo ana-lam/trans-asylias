@@ -1,0 +1,194 @@
+.site{
+  &-blog{
+    @extend .site-project;
+    @include mobile{
+      padding: 70px 0;
+    }
+    &.details{
+      padding: 150px 0 80px;
+      @include tablet{
+        padding: 100px 0 60px;
+      }
+    }
+    &-buttons{
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        justify-content: center;
+        @include mobile{
+          display: block;
+        }
+        .btn{
+          @include mobile{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    &-header{
+      padding: 150px 0 0;
+      @include mobile{
+        padding: 100px 0 0;
+      }
+      h1{
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+        @include mobile{
+          font-size: 35px;
+        }
+      }
+      p{
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+    }
+    &-pagination{
+      @extend .site-project-pagination;
+    }
+    &-post{
+      @extend .site-project-item;
+      &-thumb{
+        @extend .site-project-item-thumb;
+      }
+      &-content{
+        @extend .site-project-item-content;
+        @include mobile{
+          padding: 15px 25px 40px;
+        }
+        span{
+          font-size: 14px;
+        }
+        h3{
+          margin-bottom: 15px;
+          @include mobile{
+            font-size: 20px;
+          }
+        }
+        a.read-more{
+          color: $primary-color;
+          letter-spacing: 2px;
+          @include mobile{
+            transform: translateY(22px);
+          }
+        }
+      }
+    }
+    &-details{
+      img{
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-title{
+        font-size: 40px;
+      }
+      .feature-image{
+        margin: 20px 0 30px;
+      }
+      h2,h3,h4,h5,h6{
+        margin-bottom: 15px;
+      }
+      blockquote{
+        p{
+          color: $text-color-dark;
+          font-size: 18px;
+        }
+      }
+      cite{
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+}
+.site-blog2{
+  &-header{
+    padding-top: 80px;
+    background-color:transparent;
+    @include mobile{
+      padding-top: 60px;
+      text-align: center;
+    }
+  }
+  &-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-company{
+    background: $primary-color;
+    width: 45%;
+    padding: 70px 38px;
+    text-align:center;
+    @include desktop{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: $white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:$secondary-font;
+    }
+    h2{
+      font-weight: 400;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  }
+  &-company2{
+    height: 70vh;
+    background: transparent;
+    width: 45%;
+    padding: 70px 38px;
+    @include desktop{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: $white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:$secondary-font;
+    }
+    h2{
+      font-weight: 400;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  }
+  &-description{
+    height: 70vh;
+    width: 55%;
+    padding-left: 50px;
+    padding-top: 50px;
+    @include desktop{
+      width: 100%;
+      padding: 0 38px;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 0;
+      color: $black;
+    }
+    img{
+      width:70%;
+      height:auto;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<section class="site-about-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-about-wrapper">
+          <div class="site-about-company">
+            <h1 stlye="color:white">
+              {{ .Params.heading }}:
+            </h1>
+            <h1 style="font-size:105%"><br>&mdash; Transplanting
+                <br>&mdash; Trans Asylum Seekers
+                <br>&mdash; Trans Friendly Territories
+                <br>&mdash; Transmitting Emotional Support
+              </h1>
+          </div>
+          <div class="site-about-description">
+            <p>
+              <!-- {{ .Description }} -->
+              <center><img src="{{ "images/team/blm_iman.jpeg" | absURL }}" alt="iman" width="120%" height="120%"/></center>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-expertise">
+  <div class="container" style="display:flex;">
+    <img src='{{ "images/team/iman.jpg" | absURL }}' alt="iman"width="auto" height="30%" float="left"/>
+      <div class="site-about-description">
+        <h2>Iman Le Caire</h2>
+        <p>
+          {{ .Description }}
+        </p>
+      </div>
+    </div>
+</section>
+
+<!-- <section class="site-expertise">
+  <div class="container" style="display:flex;">
+      <div class="site-about-description">
+        <p>
+          {{ .Description }}
+        </p>
+        <br>
+        <p>
+          2019 was a pivotal year when Iman got her first on-screen acting part as Layla in <i>The Shuroo Process</i> movie, written and directed by Emrhys Cooper, which had its world premiere at the Woodstock Film Festival in October 2021. The pandemic, the death of George Floyd, and the months of protests moved Iman to join in in solidarity of the Black Lives Matter and Black Trans Lives Matter movements. Iman put on hiatus what she had been dreaming of for such a long time, a 100% dedication of her time and energy to become an actor.
+        </p>
+      </div>
+    </div>
+</section> -->
+
+<!-- {{ partial "clients.html" . }}
+
+{{ partial "team.html" . }}
+
+{{ partial "call-to-action.html" . }} -->
+
+{{ end }}

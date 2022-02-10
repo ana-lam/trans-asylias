@@ -1,0 +1,65 @@
+.site-about{
+  &-header{
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include desktop{
+      height: auto;
+      padding: 200px 0;
+    }
+    @include mobile{
+      padding: 150px 0;
+    }
+  }
+  &-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-company{
+    background: $primary-color;
+    width: 45%;
+    padding: 20px 20px 20px 20px;
+    text-align:center;
+    @include desktop{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: $white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:$secondary-font;
+    }
+    h2{
+      font-weight: 400;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  }
+  &-description{
+    height: 70vh;
+    width: 55%;
+    padding-left: 50px;
+    padding-top: 65px;
+    @include desktop{
+      width: 100%;
+      padding: 0 38px;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 0;
+      color: $black;
+    }
+  }
+}

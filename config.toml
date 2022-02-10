@@ -1,0 +1,124 @@
+baseURL       = "https://transasylias.github.io"
+languageCode  = "en-us"
+title         = "Trans Asylias"
+theme         = "roxo-hugo_remix"
+summarylength = 25
+publishDir = "docs"
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Donate"
+    url     = "portfolio"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Volunteer"
+    url     = "volunteer"
+    weight  = 4
+  [[menu.nav]]
+    name    = "Contact Us"
+    url     = "contact"
+    weight  = 5
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Trans Asylias supports and helps trans asylum seekers"
+  author = "Ana Lam"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  formspreeFormUrl  = "https://formspree.io/myykjpje"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Project Type"
+    placeholder_about_the_project = "About the Project"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "gd"
+      title  = "Graphics Design"
+    [[params.contactForm.projectType]]
+      value = "wd"
+      title  = "Web Design"
+
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero_background.gif"
+    heading               = "This is Trans Asylias in the making"
+    tagline               = "Lorem ipsum dolor sit amet"
+    primary_button        = "Request Help"
+    primary_button_url    = "portfolio"
+    secondary_button      = "Demander de l'aide"
+    secondary_button_url  = "contact"
+    tertiary_button      = "أطلب المساعدة"
+    tertiary_button_url  = "contact"
+
+  [params.portfolio]
+    enable    = true
+    title     = "OUR RECENT WORKS"
+    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "TRANS ASYLIAS"
+    # primary_button      = "Submit Query"
+    # primary_button_url  = "contact"
+    # secondary_button    = "Not Convinced"
+    # secondary_button_url = "portfolio"
+
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      # address = "713 Elmwood St.<br>Prior Lake, MN 55372"
+      # phone   = "409-896-1444"
+      email   = "iman@transasylias.org"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Volunteer"
+          url  = "volunteer"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Twitter"
+          url  = "https://twitter.com/TransAsylias"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "https://www.instagram.com/trans_asylias/"
+      # Footer Service
+      [params.footer.service]
+        title       = "We help brands:"
+        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"

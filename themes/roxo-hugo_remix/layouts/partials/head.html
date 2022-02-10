@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8" />
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  {{ with .Site.Params.author }}
+  <meta name="author" content="{{ . }}">
+  {{ end }}
+  {{ hugo.Generator }}
+
+  {{ "<!-- Bootstrap -->" | safeHTML }}
+  {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
+  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
+  {{ "<!-- font-awesome -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "font-awesome/css/font-awesome.min.css" | absURL }}" />
+  {{ "<!-- Main Stylesheets -->" | safeHTML }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+  <link href="{{ $style.Permalink }}" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
