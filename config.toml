@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://ana-lam.github.io/trans-asylias/"
 relativeURLs = "True"
 languageCode  = "en-us"
 title         = "Trans Asylias"
