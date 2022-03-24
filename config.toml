@@ -68,11 +68,11 @@ publishDir = "docs"
     heading               = "This is Trans Asylias in the making"
     tagline               = "Lorem ipsum dolor sit amet"
     primary_button        = "Request Help"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Demander de l'aide"
-    secondary_button_url  = "contact"
-    tertiary_button      = "أطلب المساعدة"
-    tertiary_button_url  = "contact"
+    primary_button_url    = "https://airtable.com/shrrka68vnJBNP4UF"
+    secondary_button      = "Demande d'aide"
+    secondary_button_url  = "https://airtable.com/shrC5XVPs3NzSRCkU"
+    tertiary_button      = "طلب المساعدة"
+    tertiary_button_url  = "https://airtable.com/shrwqX57SnX04Dtpx"
 
   [params.portfolio]
     enable    = true
