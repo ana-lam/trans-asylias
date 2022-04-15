@@ -94,7 +94,7 @@ publishDir = "docs"
       title   = "Contact Info"
       # address = "713 Elmwood St.<br>Prior Lake, MN 55372"
       # phone   = "409-896-1444"
-      email   = "iman@transasylias.org"
+      email   = "jean-manuel@transasylias.org"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
