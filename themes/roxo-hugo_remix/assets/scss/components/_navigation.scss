@@ -7,7 +7,7 @@
   z-index: 1000;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   @include desktop{
-    background: $white;
+    background: #d9a2fa;
     margin: 10px;
     border-radius: 5px;
     top: 0;
@@ -51,7 +51,7 @@
       height: 2px;
       width: 25px;
       transition: all 0.2s;
-      background: $primary-color;
+      background: $black;
       display: block;
       &:not(:last-child){
         margin-bottom: 5px;
