@@ -1,0 +1,34 @@
+{{ with .Site.Params.call_to_action }}
+  {{ if .enable }}
+  <section class="site-cta" style='background-image: url("{{ .background_image | absURL }}");'>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="site-cta-title">{{ .title }}</h3>
+          <h4>is an organization founded by <a href="url" style="color:#2b176e">Iman Le Caire</a> that seeks to support and relocate transgender asylum seekers</h4>
+          <!-- <ul class="site-cta-buttons">
+            <li>
+              <a href="{{ .primary_button_url | absURL }}" class="btn btn-secondary">
+                <span class="btn-area">
+                  <span data-text="{{ .primary_button }}">
+                    {{ .primary_button }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
+                <span class="btn-area">
+                  <span data-text="{{ .secondary_button }}">
+                    {{ .secondary_button }}
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
