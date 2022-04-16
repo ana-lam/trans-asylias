@@ -26,8 +26,8 @@ publishDir = "docs"
     url     = "media"
     weight  = 5
   [[menu.nav]]
-    name    = "Contact Us"
-    url     = "contact"
+    name    = "Request Help"
+    url     = "requesthelp"
     weight  = 6
 
 # Site Params

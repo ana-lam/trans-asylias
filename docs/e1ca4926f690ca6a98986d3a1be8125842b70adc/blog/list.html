@@ -26,8 +26,11 @@
           {{ end }}
           <div class="site-blog-post-content">
             <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
-            <h3><a href="{{ .Params.link }}">{{ .Title }}</a></h3>
-            <a href="{{ .Params.link }}" class="read-more">read more</a>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>
+              {{ .Summary }} ...
+            </p>
+            <a href="{{ .Permalink }}" class="read-more">read more</a>
           </div>
         </article>
       </div>
@@ -41,17 +44,6 @@
   </div>
 </section>
 
-<section class="site-volunteer details" style="margin-top:0%;padding-top:0px">
-  <div class="container" style="margin-top:0%;padding-top:0px">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <article class="site-volunteer-details">
-          <p style="color:black;font-size:120%;text-align: center;">For Media & Press inquiries please contact Jean-Manuel Pourquet at <a href="jean-manuel@transasylias.org" style="color:#2b176e">jean-manuel@transasylias.org</a>.
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "call-to-action.html" . }}
 
 {{ end }}
