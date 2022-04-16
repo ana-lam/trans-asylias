@@ -1,35 +1,54 @@
 {{ define "main" }}
 
-<section class="site-about-header">
+<section class="site-volunteer-header">
   <div class="container">
-    <div class="row">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1>{{ .Title }}</h1>
+      </div>
+      </div>
       <div class="col-12">
-        <div class="site-about-wrapper">
+        <div class="site-about-wrapper" >
           <div class="site-about-company">
-            <h1 stlye="color:white">
+            <h1 style="margin-bottom:-10px">
               {{ .Params.heading }}:
             </h1>
-            <h1 style="font-size:105%"><br>&mdash; Transplanting
-                <br>&mdash; Trans Asylum Seekers
-                <br>&mdash; Trans Friendly Territories
-                <br>&mdash; Transmitting Emotional Support
+            <h1 style="font-size:105%;margin-top:20px">
+                Transplanting Trans Asylum Seekers to
+                Trans Friendly Territories while
+                Transmitting Logistic and Emotional Support.
               </h1>
           </div>
-          <div class="site-about-description">
+          <div class="site-about-company" style="background:white">
             <p>
-              <!-- {{ .Description }} -->
-              <center><img src="{{ "images/team/blm_iman.jpeg" | absURL }}" alt="iman" width="120%" height="120%"/></center>
+              <center><img src="{{ "images/team/mission_mikiodo.jpg" | absURL }}" alt="iman" width="150%" height="120%"/></center>
             </p>
           </div>
         </div>
       </div>
     </div>
+</section>
+
+<section class="site-volunteer details">
+  <div class="container" style="padding-top:80px">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <article class="site-volunteer-details">
+          <p style="color:black;font-size:120%;text-align: center;">TRANS ASYLIAS is a non-profit organization
+            created in 2021 and registered in the state of New York with the purpose to
+            help transgender women and men escape from their home countries where they face
+            persecution and resettle in trans-friendly countries.
+          </p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
+
 <section class="site-expertise">
   <div class="container" style="display:flex;">
-    <img src='{{ "images/team/iman.jpg" | absURL }}' alt="iman" width="40%" height="auto" float="left"/>
+    <img src='{{ "images/team/iman.jpg" | absURL }}' alt="iman" width="50%" height="auto" float="left"/>
       <div class="site-about-description">
         <h2>Iman Le Caire</h2>
         <p>

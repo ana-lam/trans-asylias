@@ -22,9 +22,13 @@ publishDir = "docs"
     url     = "volunteer"
     weight  = 4
   [[menu.nav]]
+    name    = "Media & Press"
+    url     = "media"
+    weight  = 5
+  [[menu.nav]]
     name    = "Contact Us"
     url     = "contact"
-    weight  = 5
+    weight  = 6
 
 # Site Params
 [params]

@@ -23,7 +23,7 @@
   &-company{
     background: $primary-color;
     width: 45%;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 10px 10px 20px;
     text-align:center;
     @include desktop{
       width: 100%;
@@ -33,7 +33,7 @@
       color: $white;
       font-weight: 400;
       font-size: 25px;
-      line-height: 60px;
+      line-height: 50px;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-family:$secondary-font;
