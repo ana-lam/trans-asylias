@@ -15,7 +15,7 @@ publishDir = "docs"
     weight  = 2
   [[menu.nav]]
     name    = "Donate"
-    url     = "portfolio"
+    url     = "donate"
     weight  = 3
   [[menu.nav]]
     name    = "Volunteer"
