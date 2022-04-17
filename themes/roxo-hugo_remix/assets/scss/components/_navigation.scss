@@ -25,6 +25,12 @@
       top: -5px;
       position:relative;
     }
+    h3 {
+      @include mobile{
+        font-size: 125%;
+      }
+
+    }
   }
   .nav-item{
     @include desktop{
