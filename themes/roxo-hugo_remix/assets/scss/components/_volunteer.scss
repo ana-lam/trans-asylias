@@ -6,8 +6,24 @@
     }
     &.details{
       padding: 0px 0 80px;
+      margin-bottom:-5%;
       @include tablet{
         padding: 100px 0 60px;
+      }
+      @include mobile{
+        margin-top: -30%;
+        margin-bottom:-10%;
+      }
+    }
+    &.details2{
+      padding: 0px 0 80px;
+      margin-bottom:-5%;
+      @include tablet{
+        padding: 100px 0 60px;
+      }
+      @include mobile{
+        margin-top: -500%;
+        margin-bottom:-10%;
       }
     }
     &-buttons{
@@ -24,6 +40,7 @@
             display: block;
             width: 90%;
             margin: 0 auto;
+            font-size: 75%
           }
         }
       }
@@ -31,7 +48,7 @@
     &-header{
       padding: 150px 0 0;
       @include mobile{
-        padding: 100px 0 0;
+        padding: 40% 0 0;
       }
       h1{
         font-weight: 700;
@@ -118,6 +135,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @include mobile{
+      padding-bottom: 0%;
+    }
   }
   &-company{
     background: $primary-color;
@@ -149,10 +169,13 @@
     height: 70vh;
     background: transparent;
     width: 45%;
-    padding: 70px 38px;
+    padding: 6% 38px;
     @include desktop{
       width: 100%;
       margin-bottom: 20px;
+    }
+    @include mobile{
+      margin-top:-80%
     }
     h1{
       color: $white;

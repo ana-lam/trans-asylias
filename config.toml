@@ -77,6 +77,10 @@ publishDir = "docs"
     secondary_button_url  = "https://airtable.com/shrC5XVPs3NzSRCkU"
     tertiary_button      = "طلب المساعدة"
     tertiary_button_url  = "https://airtable.com/shrwqX57SnX04Dtpx"
+    fourth_button        = "فورم درخواست کمک از ترانس اسیلیس"
+    fourth_button_url    = "https://airtable.com/shrvFELjLOYnZe8z7"
+    fifth_button         = "Запрос о помощи"
+    fifth_button_url     = "https://airtable.com/shrrvSZaFHuOev59j"
 
   [params.portfolio]
     enable    = true

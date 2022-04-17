@@ -29,6 +29,9 @@
       width: 100%;
       margin-bottom: 20px;
     }
+    @include mobile{
+      width: 100%;
+    }
     h1{
       color: $white;
       font-weight: 400;
@@ -45,6 +48,13 @@
     h3{
       font-size: 20px;
     }
+    img{
+      width: 130%;
+      height: 120%;
+      @include mobile{
+        width: 20%;
+      }
+    }
   }
   &-description{
     height: 70vh;
@@ -54,6 +64,9 @@
     @include desktop{
       width: 100%;
       padding: 0 38px;
+    }
+    @include mobile{
+      width: 100%;
     }
     p{
       font-size: 20px;

@@ -6,9 +6,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto" style="padding-top:27%">
           <div class="site-hero-content text-center">
-            <!-- <h6>{{ .tagline }}</h6> -->
             <h1>
-              <!-- {{ .heading }} -->
             </h1>
             <ul class="site-hero-content-buttons">
               <li>
@@ -34,6 +32,30 @@
                   <span class="btn-area">
                     <span data-text="{{ .tertiary_button }}">
                       {{ .tertiary_button }}
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="site-hero-content text-center">
+            <h1>
+            </h1>
+            <ul class="site-hero-content-buttons">
+              <li>
+                <a href="{{ .fourth_button_url | absURL }}" class="btn btn-primary">
+                  <span class="btn-area">
+                    <span data-text="{{ .fourth_button }}">
+                      {{ .fourth_button }}
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ .fifth_button_url | absURL }}" class="btn btn-primary">
+                  <span class="btn-area">
+                    <span data-text="{{ .fifth_button }}">
+                      {{ .fifth_button }}
                     </span>
                   </span>
                 </a>
