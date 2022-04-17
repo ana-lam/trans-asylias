@@ -1,7 +1,7 @@
-{{ with .Site.Data.testimonial }}
+{{ with .Site.Data.requesthelp }}
   {{ if .enable }}
   <section class="site-testimonial">
-    <div class="container">
+    <div class="container" style="margin-top:5%">
       <div class="row">
         <div class="col-12">
           <div class="section-title">
@@ -17,16 +17,16 @@
         <div class="col-lg-4 col-md-6">
           <div class="site-testimonial-item">
             <div class="site-testimonial-item-header">
-              <div class="thumb">
+              <!-- <div class="thumb">
                 <img src="{{ .thumb | absURL }}" alt="user-thumb-one">
-              </div>
+              </div> -->
               <div class="person">
-                <h5><a href="{{ .link }}">{{ .name }}</a></h5>
+                <h5><a href="{{ .link }}" style="color:#2b176e">{{ .name }}</a></h5>
               </div>
             </div>
-            <p class="site-testimonial-item-body">
+            <!-- <p class="site-testimonial-item-body">
               {{ .quote }}
-            </p>
+            </p> -->
           </div>
         </div>
         {{ end }}
