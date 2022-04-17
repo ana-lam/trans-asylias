@@ -1,0 +1,44 @@
+enable  : true
+title   : "Request Help"
+subtitle: "Please fill out a request for help form so that we can make your life safer."
+testimonial_item :
+  - thumb : "images/testimonial/user-thumb-one.jpg"
+    name  : "Request Help"
+    quote : >
+            "If you identify as Transgender or a person whose gender identity, gender expression
+            does not conform to the one associated with the sex to which you were assigned at birth,
+            and believe that you are in a life-threatening situation which could justify resettlement
+            in a country which protects a person like you and respects its rights, then TRANS ASYLIAS
+            may be able to help you."
+    link : https://airtable.com/shrrka68vnJBNP4UF
+
+  - thumb : "images/testimonial/user-thumb-two.jpg"
+    name  : "Demande d'aide"
+    quote : >
+            "Si vous vous identifiez comme transgenre ou une personne dont l'identité de genre,
+            l'expression de genre n'est pas conforme à celle associée au sexe qui vous avez été assigné
+            à la naissance, et vous pensez que vous êtes dans une situation qui met votre vie en danger
+            et pourrait justifier une réinstallation dans un pays qui protège une personne comme vous et
+            respecte ses droits, alors TRANS ASYLIAS peut être en mesure de vous aider."
+    link : https://airtable.com/shrC5XVPs3NzSRCkUs
+
+  - thumb : "images/testimonial/user-thumb-three.jpg"
+    name  : "طلب المساعدة"
+    quote : >
+            ""
+    link : https://airtable.com/shrwqX57SnX04Dtpx
+
+  - thumb : "images/testimonial/user-thumb-four.jpg"
+    name  : "فورم درخواست کمک از ترانس اسیلیس"
+    quote : >
+            ""
+    link : https://airtable.com/shrvFELjLOYnZe8z7
+
+  - thumb : "images/testimonial/user-thumb-five.jpg"
+    name  : "Запрос о помощи"
+    quote : >
+            "Если Вы идентифицируетесь как Трансгендерная персона или персона, чья гендерная идентичность,
+            самовыражение не совпадает с зарегистрированным при рождении полом, и чувствуете, что Вы находитесь
+            в жизненно опасной ситуации которая обосновывает переселение в страну, защищающую и поддерживающую
+            Ваши права, то ТРАНС АСИЛИАС возможно сможет Вам помочь."
+    link : https://airtable.com/shrrvSZaFHuOev59j
