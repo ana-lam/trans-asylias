@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <title>Donate</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <meta name="author" content="Ana Lam">
+  
+  <meta name="generator" content="Hugo 0.92.1" />
+
+  <!-- Bootstrap -->
+  
+  <link rel="stylesheet" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/css/bootstrap.min.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/font-awesome/css/font-awesome.min.css" />
+  <!-- Main Stylesheets -->
+  
+  <link href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/scss/style.min.css" rel="stylesheet" />
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body><nav class="navbar navbar-expand-lg site-navigation">
+  <div class="container">
+    <a class="navbar-brand" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/" style="letter-spacing:2px; color:black;"
+>
+
+      <h3><img src='https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/images/transparent_logo_larger.png' alt="logo"/> &nbsp;TRANS ASYLIAS</h3>
+
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#sitenavbar"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sitenavbar">
+      <ul class="navbar-nav ml-auto main-nav">
+        
+        
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/about">About</a>
+          </li>
+          
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/donate">Donate</a>
+          </li>
+          
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/volunteer">Volunteer</a>
+          </li>
+          
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/media">Media &amp; Press</a>
+          </li>
+          
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/requesthelp">Request Help</a>
+          </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+
+<section class="site-project-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="site-project-header-content">
+          <h1>
+            Donate
+          </h1>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <a href="#project" class="site-project-header-action scroll-to">
+          <img src="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/images/to-bottom.png" alt="arrow-down" style="height:10%"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-project" id="project">
+  <div class="container" style="display:flex;justify-content: center;">
+    <div class="row">
+      <div id="smart-button-container">
+          <div style="text-align: center"><label for="description" style="padding-right:1%">Your Name: </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+            <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+          <div style="text-align: center"><label for="amount" style="padding-right:1%">Amount: </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
+            <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+          <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+            <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+          <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+        </div>
+        <script src="https://www.paypal.com/sdk/js?client-id=Afm3sfmny0qaq8t2DvT-EdnCCjnnEXT3N_QZTUr-oJCiDrbbjrFsFOoLfqDIIdOakZyKErJqQnABPFP_&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <script>
+        function initPayPalButton() {
+          var description = document.querySelector('#smart-button-container #description');
+          var amount = document.querySelector('#smart-button-container #amount');
+          var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+          var priceError = document.querySelector('#smart-button-container #priceLabelError');
+          var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+          var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+          var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+          var elArr = [description, amount];
+
+          if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+            invoiceidDiv.style.display = "block";
+          }
+
+          var purchase_units = [];
+          purchase_units[0] = {};
+          purchase_units[0].amount = {};
+
+          function validate(event) {
+            return event.value.length > 0;
+          }
+
+          paypal.Buttons({
+            style: {
+              color: 'silver',
+              shape: 'rect',
+              label: 'paypal',
+              layout: 'vertical',
+
+            },
+
+            onInit: function (data, actions) {
+              actions.disable();
+
+              if(invoiceidDiv.style.display === "block") {
+                elArr.push(invoiceid);
+              }
+
+              elArr.forEach(function (item) {
+                item.addEventListener('keyup', function (event) {
+                  var result = elArr.every(validate);
+                  if (result) {
+                    actions.enable();
+                  } else {
+                    actions.disable();
+                  }
+                });
+              });
+            },
+
+            onClick: function () {
+              if (description.value.length < 1) {
+                descriptionError.style.visibility = "visible";
+              } else {
+                descriptionError.style.visibility = "hidden";
+              }
+
+              if (amount.value.length < 1) {
+                priceError.style.visibility = "visible";
+              } else {
+                priceError.style.visibility = "hidden";
+              }
+
+              if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+                invoiceidError.style.visibility = "visible";
+              } else {
+                invoiceidError.style.visibility = "hidden";
+              }
+
+              purchase_units[0].description = description.value;
+              purchase_units[0].amount.value = amount.value;
+
+              if(invoiceid.value !== '') {
+                purchase_units[0].invoice_id = invoiceid.value;
+              }
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: purchase_units,
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+
+                
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                
+
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            }
+          }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+        </script>
+    </div>
+  </div>
+</section>
+
+
+
+        </main><footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">Contact Info</h5>
+          <p class="site-footer-widget-description">
+            
+            <a href="mailto:jean-manuel@transasylias.org">jean-manuel@transasylias.org</a>
+          </p>
+        </div>
+      </div>
+      
+      
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">Social Media</h5>
+          <ul class="site-footer-widget-links">
+            
+              <li><a href="https://twitter.com/TransAsylias">Twitter</a></li>
+            
+              <li><a href="https://www.instagram.com/trans_asylias/">Instagram</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="site-footer-widget">
+          
+          <p class="site-footer-widget-description">
+            
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-12">
+        <a href="#top" class="site-footer-widget-top">
+          <img align="right" src='https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/images/to-top.png' alt="back-to-top">
+          
+        </a>
+      </div>
+    </div>
+    <div class="row" style="padding-top:5%; padding-left:5%">
+        <h5 style="color:white;font-weight:normal;font-size:80%">&copy; Trans Asylias 2022<br><br>Awaiting 501(c)(3) Registration</h5>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/js/formhandler.min.js"></script>
+
+<script src="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/js/vendor.min.js"></script>
+
+<script src="https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/js/script.min.js"></script>
+</body>
+</html>

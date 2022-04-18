@@ -19,7 +19,7 @@
   }
 }
 @mixin desktop-lg{
-  @media(max-width:1200px){
+  @media (min-device-width: 1000px){
     @content;
   }
 }
