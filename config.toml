@@ -1,4 +1,4 @@
-baseURL = "https://transasylias.org/e1ca4926f690ca6a98986d3a1be8125842b70adc/"
+baseURL = "https://transasylias.org/"
 relativeURLs = "True"
 languageCode  = "en-us"
 title         = "Trans Asylias"
